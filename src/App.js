@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-do
 
 import FeedbackList from "./components/FeedbackList"
 import Header from "./components/Header"
-// import Card from "./components/shared/Card";
 import FeedbackStats from "./components/FeedbackStats"
 import FeedbackForm from "./components/FeedbackForm"
 import AboutIconLink from './components/AboutIconLink'
@@ -10,7 +9,6 @@ import Card from './components/shared/Card'
 
 import { FeedbackProvider } from './context/FeedbackContext'
 
-// import FeedbackData from "./data/FeedbackData"
 
 import AboutPage from './pages/AboutPage'
 
@@ -19,9 +17,6 @@ function App() {
   return (
     <FeedbackProvider>
       <Router>
-        {/* <Header text = 'Hello World'/> */}
-        {/* <Header text = {true}/>  This one will throw an error becasue header text type is defined as string */}
-        {/* <Header bgColor = 'red' textColor = 'white' /> */}
         <Header />
         <div className="container">
           <Routes>
@@ -31,9 +26,6 @@ function App() {
                 <FeedbackStats />
                 <FeedbackList />
                 <AboutIconLink />
-                {/* <Card>
-          Hello World
-        </Card> */}
               </>
             }>
             </Route>

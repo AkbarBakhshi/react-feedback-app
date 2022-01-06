@@ -1,7 +1,5 @@
 import { useContext } from 'react';
 
-// import PropTypes from 'prop-types'
-
 import FeedbackContext from '../context/FeedbackContext';
 
 function FeedbackStats() {
@@ -27,17 +25,5 @@ function FeedbackStats() {
         </div>
     )
 }
-
-
-// FeedbackStats.propTypes = {
-//     feedback: PropTypes.arrayOf(
-//         PropTypes.shape({
-//             // id: PropTypes.string.isRequired,
-//             id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-//             text: PropTypes.string.isRequired,
-//             rating: PropTypes.number.isRequired,
-//         })
-//     )
-// }
 
 export default FeedbackStats

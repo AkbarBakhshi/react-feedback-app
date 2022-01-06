@@ -9,9 +9,6 @@ import PropTypes from 'prop-types'
 import FeedbackContext from '../context/FeedbackContext'
 
 function FeedbackItem({ item }) {
-    // return (
-    //     <Card item = {item} />
-    // )
     const {deleteFeedback, editFeedback} = useContext(FeedbackContext)
 
     return (
